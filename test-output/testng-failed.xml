@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.test.autoset.quickstart.homepage.TC003_VerifyLoginWithDifferentRecords">
+        <methods>
+          <include name="testLogin" invocation-numbers="1"/>
+          <include name="endTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.test.autoset.quickstart.homepage.TC003_VerifyLoginWithDifferentRecords -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
