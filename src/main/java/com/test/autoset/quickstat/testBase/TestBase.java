@@ -16,21 +16,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 
+import com.test.autoset.quickstat.customListener.Listener;
 import com.test.autoset.quickstat.excelReader.Excel_Reader;
 
 public class TestBase {
 
 	public static final Logger log = Logger.getLogger(TestBase.class.getName());
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	Excel_Reader excel;
 
-	// String url = "http://demo.automationtesting.in/Register.html";
-	String url = "http://automationpractice.com/index.php";
+	 String url = "http://demo.automationtesting.in/Register.html";
+	//String url = "http://automationpractice.com/index.php";
 	String browser = "chrome";
+	Listener listner;
 
 	public void init() {
-
+		// = new Listener(driver);
 		selectBrowser(browser);
 		getUrl(url);
 		String log4jConfPath = "log4j.properties";

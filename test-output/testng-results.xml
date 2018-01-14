@@ -1,68 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[<a href= 'D:\Eclipse_Workspace\quickstart\src\main\java\com\test\autoset\quickstat\screenshot\testLoginnayan__06_01-2018_02_17_33.png'> <img src='D:\Eclipse_Workspace\quickstart\src\main\java\com\test\autoset\quickstat\screenshot\testLoginnayan__06_01-2018_02_17_33.png' height='100' width ='100'/></a>]]>
+      <![CDATA[<a href= 'D:\B\quickstart\src\main\java\com\test\autoset\quickstat\failure_screenshots\verifyRegistrationSuccess_09_01-2018_06_36_08.png'> <img src='D:\B\quickstart\src\main\java\com\test\autoset\quickstat\failure_screenshots\verifyRegistrationSuccess_09_01-2018_06_36_08.png' height='100' width ='100'/></a>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42115" started-at="2018-01-06T08:46:53Z" finished-at="2018-01-06T08:47:35Z">
+  <suite name="Regression Suite" duration-ms="75810" started-at="2018-01-09T01:04:55Z" finished-at="2018-01-09T01:06:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42115" started-at="2018-01-06T08:46:53Z" finished-at="2018-01-06T08:47:35Z">
-      <class name="com.test.autoset.quickstart.homepage.TC003_VerifyLoginWithDifferentRecords">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.autoset.quickstart.homepage.TC003_VerifyLoginWithDifferentRecords@5700d6b1]" name="setup" is-config="true" duration-ms="27529" started-at="2018-01-06T14:16:53Z" finished-at="2018-01-06T14:17:21Z">
+    <test name="TC002_verifyRegistration" duration-ms="75810" started-at="2018-01-09T01:04:55Z" finished-at="2018-01-09T01:06:10Z">
+      <class name="com.test.autoset.quickstart.homepage.TC002_verifyRegistration">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.autoset.quickstart.homepage.TC002_verifyRegistration@73ad2d6]" name="setUp" is-config="true" duration-ms="12541" started-at="2018-01-09T06:34:55Z" finished-at="2018-01-09T06:35:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.autoset.quickstart.homepage.TC003_VerifyLoginWithDifferentRecords@5700d6b1]" name="testLogin" duration-ms="11430" started-at="2018-01-06T14:17:23Z" data-provider="loginData" finished-at="2018-01-06T14:17:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nayan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[agrawal]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[y]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<a href= 'D:\Eclipse_Workspace\quickstart\src\main\java\com\test\autoset\quickstat\screenshot\testLoginnayan__06_01-2018_02_17_33.png'> <img src='D:\Eclipse_Workspace\quickstart\src\main\java\com\test\autoset\quickstat\screenshot\testLoginnayan__06_01-2018_02_17_33.png' height='100' width ='100'/></a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="SKIP" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.autoset.quickstart.homepage.TC003_VerifyLoginWithDifferentRecords@5700d6b1]" name="testLogin" duration-ms="7" started-at="2018-01-06T14:17:34Z" data-provider="loginData" finished-at="2018-01-06T14:17:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nayan_01]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qwq_02]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[n]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.SkipException">
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyRegistrationSuccess()[pri:0, instance:com.test.autoset.quickstart.homepage.TC002_verifyRegistration@73ad2d6]" name="verifyRegistrationSuccess" duration-ms="61044" started-at="2018-01-09T06:35:07Z" finished-at="2018-01-09T06:36:08Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[User makred it as no run]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='basicBootstrapForm']/div[1]/div[2]/inputq"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'DELL-PC', ip: '192.168.1.14', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: 16a1c6fa9847d8d4154dd5be216bf001
+*** Element info: {Using=xpath, value=//*[@id='basicBootstrapForm']/div[1]/div[2]/inputq}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: User makred it as no run
-	at com.test.autoset.quickstart.homepage.TC003_VerifyLoginWithDifferentRecords.testLogin(TC003_VerifyLoginWithDifferentRecords.java:35)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='basicBootstrapForm']/div[1]/div[2]/inputq"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'DELL-PC', ip: '192.168.1.14', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: 16a1c6fa9847d8d4154dd5be216bf001
+*** Element info: {Using=xpath, value=//*[@id='basicBootstrapForm']/div[1]/div[2]/inputq}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.clear(Unknown Source)
+	at com.test.autoset.quickstat.uiAction.HomePage.RegisterToApplicaation(HomePage.java:103)
+	at com.test.autoset.quickstart.homepage.TC002_verifyRegistration.verifyRegistrationSuccess(TC002_verifyRegistration.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -90,15 +89,18 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[<a href= 'D:\B\quickstart\src\main\java\com\test\autoset\quickstat\failure_screenshots\verifyRegistrationSuccess_09_01-2018_06_36_08.png'> <img src='D:\B\quickstart\src\main\java\com\test\autoset\quickstat\failure_screenshots\verifyRegistrationSuccess_09_01-2018_06_36_08.png' height='100' width ='100'/></a>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.test.autoset.quickstart.homepage.TC003_VerifyLoginWithDifferentRecords@5700d6b1]" name="endTest" is-config="true" duration-ms="1010" started-at="2018-01-06T14:17:34Z" finished-at="2018-01-06T14:17:35Z">
+        </test-method> <!-- verifyRegistrationSuccess -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.test.autoset.quickstart.homepage.TC002_verifyRegistration@73ad2d6]" name="endTest" is-config="true" duration-ms="985" started-at="2018-01-09T06:36:09Z" finished-at="2018-01-09T06:36:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.test.autoset.quickstart.homepage.TC003_VerifyLoginWithDifferentRecords -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.test.autoset.quickstart.homepage.TC002_verifyRegistration -->
+    </test> <!-- TC002_verifyRegistration -->
+  </suite> <!-- Regression Suite -->
 </testng-results>
