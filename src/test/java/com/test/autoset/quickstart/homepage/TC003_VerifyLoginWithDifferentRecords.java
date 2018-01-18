@@ -24,6 +24,7 @@ public class TC003_VerifyLoginWithDifferentRecords extends TestBase {
 		String[][] testRecords = getData("DataRead.xlsx", "NT");
 		System.out.println("Records -----------" + testRecords);
 		System.out.println("");
+		System.out.println("");
 		return testRecords;
 	}
 		
