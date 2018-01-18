@@ -23,7 +23,7 @@ public class TC003_VerifyLoginWithDifferentRecords extends TestBase {
 	public String[][] getTestData() throws Exception{
 		String[][] testRecords = getData("DataRead.xlsx", "NT");
 		System.out.println("Records -----------" + testRecords);
-		
+		System.out.println("");
 		return testRecords;
 	}
 		
